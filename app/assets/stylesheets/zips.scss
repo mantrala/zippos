@@ -1,0 +1,61 @@
+// Place all the styles related to the zips controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$dodgerBlue: #1c90f3;
+
+.search-query {
+  border: none;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid #e6e9eb;
+  box-shadow: none;
+  border-radius: 0;
+  width: 50% !important;
+  margin-left: 50px;
+}
+
+.search-query:focus {
+  border-bottom: 2px solid $dodgerBlue;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+button.search {
+  border: none;
+  margin-top: 10px;
+}
+
+.btn-default:hover {
+  background-color: #fff;
+  color: $dodgerBlue;
+}
+
+.blue, h3 {
+  color: $dodgerBlue;
+}
+
+.voffset {
+  margin-top: 30px;
+}
+
+th {
+  @extend .blue;
+}
+
+.country {
+  width: 40% !important;
+}
+
+.my_search {
+  width: 100%;
+}
+
+a, a:hover {
+  color: #fff;
+}
+
+.nav > li > a:hover {
+  background-color: #334045;
+}

@@ -1,0 +1,32 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# This model initially had no columns defined. If you add columns to the
+# model remove the '{}' from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+tempe:
+  id: 1
+  zipcode: 85284
+  country: United States
+  country_abbr: US
+  places: '[]'
+  created_at: <%= Time.now %>
+  updated_at: <%= Time.now %>
+
+tucson:
+  id: 2
+  zipcode: 85703
+  country: United States
+  country_abbr: US
+  places: '[]'
+  created_at: <%= Time.now %>
+  updated_at: <%= Time.now %>
+
+flagstaff:
+  id: 3
+  zipcode: 86001
+  country: United States
+  country_abbr: US
+  places: '[]'
+  created_at: <%= Time.now %>
+  updated_at: <%= Time.now %>

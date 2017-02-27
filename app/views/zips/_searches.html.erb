@@ -1,0 +1,23 @@
+<h3 class="voffset">Recent Searches</h3>
+<div class="voffset">
+  <table class="table">
+    <thead class="thead-inverse">
+      <tr>
+        <th>Zip Code</th>
+        <th>Country</th>
+        <th>Place Name</th>
+        <th>Last Searched</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @searches.each do |search| %>
+        <tr>
+          <td><%= search.zipcode %></td>
+          <td><%= search.country %></td>
+          <td><%= place_name(search) %></td>
+          <td><%= search.created_at.strftime("%e, %b %Y") %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

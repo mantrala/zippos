@@ -1,0 +1,16 @@
+<%= form_tag(search_url, class: "form-inline") do %>
+  <div class="input-group col-md-12">
+    <div class="form-group my_search">
+      <%= select_tag :country, options_for_select(countries, "US"), class: "form-control input-lg country" %>
+      <%= text_field_tag 'search', nil, placeholder: 'Enter zip...', class: "form-control search-query input-lg", autocomplete: :off %>
+
+      <span>
+          <%= button_tag "", type: 'submit', class: "btn btn-default glyphicon glyphicon-search search", disabled: true %>
+      </span>
+    </div>
+  </div>
+<% end %>
+
+<% if @searches.length > 0 %>
+  <%= render 'searches' %>
+<% end %>
